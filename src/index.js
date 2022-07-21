@@ -1,7 +1,7 @@
 var IDX=256, HEX=[];
 while (IDX--) HEX[IDX] = (IDX + 256).toString(16).substring(1);
 
-export function hexoid(len) {
+export default function (len) {
 	len = len || 16;
 	var str='', num=0;
 	return function () {
